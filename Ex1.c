@@ -10,16 +10,16 @@ int main()
 	{
 		input[index] = c;
 		index++;
-		if (index >= MAX_LEN - 1)
+		if (index >= MAX_LEN )
 		{
-			printf("The input length is over %d\n", MAX_LEN - 1);
+			printf("The input length is over %d\n", MAX_LEN );
 			return 0;
 		}
 		c = getchar();
 	}
 	input[index] = '\0';
 	int word_count = 0;
-	for (int i = 0; i < MAX_LEN - 1; i++)
+	for (int i = 0; i < MAX_LEN ; i++)
 	{
 		if (input[i] == '\0')
 		{
